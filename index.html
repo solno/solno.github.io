@@ -22,7 +22,7 @@
     <script>
       var $alert = $('#alert');
       moment.locale('zh-TW');
-      function updateCurrentTime() => {
+      function updateCurrentTime() {
         var m = moment();
         $alert.text(`現在時間 ${m.format('LL LTS')}`);
         setTimeout(updateCurrentTime, 1000);
